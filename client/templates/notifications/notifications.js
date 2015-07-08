@@ -18,3 +18,7 @@ Template.notificationItem.events({
         Notifications.update(this._id, {$set: {read: true}});
     }
 });
+
+Template.notifications.rendered = function() {
+    $('.dropdown-button').dropdown();
+};

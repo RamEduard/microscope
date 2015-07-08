@@ -1,19 +1,19 @@
 <template name="postNew">
-	<form class="main form">
-		<div class="form-group">
-			<label class="control-label" for="url">URL</label>
-			<div class="controls">
-				<input name="url" id="url" type="url" value="" placeholder="Your URL" class="form-control" required/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label" for="title">Title</label>
-			<div class="controls">
-				<input name="title" id="title" type="text" value="" placeholder="Name your post" class="form-control" required/>
-			</div>
-		</div>
-		<input type="submit" value="Submit" class="btn btn-primary"/>
-		<a class="btn btn-default" 
-		   href="{{ pathFor 'home' }}">Back</a>
-	</form>
+
+	<h4 class="page-header">Create Your Post</h4>
+
+	{{#autoForm id="postNew" collection="Posts" type="insert" }}
+		{{> afQuickField name='imageUrl' placeholder="Introduce the post image URL"}}
+		{{> afQuickField name='title' placeholder="Introduce the post title"}}
+		{{> afQuickField name='category' }}
+	    {{> afQuickField name='description' rows=8  placeholder="Post content description..."}}
+
+	    <br/>
+	    <div>
+	    	<button type="submit" class="btn green">
+	    		<i class="fa fa-floppy-o"></i> Save
+    		</button>
+    		<a class="btn btn-default" href="{{ pathFor 'home' }}">Back</a>
+	    </div>
+	{{/autoForm}}
 </template>

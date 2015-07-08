@@ -1,5 +1,37 @@
 <template name="postPage">
-	{{> postItem }}
+	<div id="index-banner" class="parallax-container">
+	    <div class="section no-pad-bot">
+	      	<div class="container">
+		        <br><br>
+		        <h1 class="header center teal-text text-lighten-2">{{title}}</h1>
+		        <div class="row center">
+		          <h5 class="header col s12 light"></h5>
+		        </div>
+	      	</div>
+	    </div>
+	    <div class="parallax">
+	    	<img src="{{imageUrl}}" alt="{{title}}">
+    	</div>
+  	</div>
+  	<div class="card">
+  		<div class="card-title shades-text text-black">
+  			<div class="label label-primary">{{category}}</div>
+  		</div>
+  		<div class="card-content">
+  			{{{htmlDescription}}}
+  		</div>
+  		<div class="card-action">
+  			{{#if tags}}
+  				<h6>Tags</h6>
+                {{#each tags}}
+                    <span class="label label-primary"><i class="fa fa-tags"></i> {{this}}</span>
+                {{/each}}
+            {{/if}}
+  		</div>
+  	</div>
+
+  	<h5>Comments</h5>
+
 	<ul class="comments">
 		{{#each comments }}
 			{{> commentItem }}

@@ -1,15 +1,34 @@
 <template name="home">
-  <div class="posts">
-    {{#each posts}}
-      {{> postItem}}
-    {{/each}}
-    
-    {{# if nextPath }}
-        <a class="load-more" href="{{ nextPath }}">Load more</a>
-    {{ else }}
-        {{# unless ready }}
-            {{> spinner }}
-        {{/ unless }}
-    {{/ if }}
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">New Microscope</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive microscope based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="{{ pathFor 'postNew' }}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Create Your First Post</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="https://placehold.it/1920x1080?text=+" alt="New Microscope Image"></div>
+  </div>
+  <div class="container">
+    <div class="row posts">
+      {{#each posts}}
+        {{> postItem}}
+      {{/each}}
+      
+      {{# if nextPath }}
+          <a class="load-more" href="{{ nextPath }}">Load more</a>
+      {{ else }}
+          {{# unless ready }}
+              {{> loading }}
+          {{/ unless }}
+      {{/ if }}
+    </div>
   </div>
 </template>

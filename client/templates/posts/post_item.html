@@ -1,25 +1,31 @@
 <template name="postItem">
-    <div class="post">
-        <a href="#" class="upvote btn {{ upvotedClass }}">⬆</a>
-        <div class="post-content">
-            <h3>
-                <a href="{{url}}">{{title}}</a>
-                <span>{{domain}}</span>
-            </h3>
-            <p>
-                {{pluralize votes "Vote"}} <span class="badge">{{ votes }}</span>
-                submitted by {{ author }} 
-                <a class="btn btn-xs btn-info" 
-                   href="{{ pathFor 'postPage'}}">
-                    Comments <span class="badge">{{ commentsCount }}</span>
+    <div class="col s12 m4 l3">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img src="{{imageUrl}}">
+                <span class="card-title">{{title}}</span>
+                <div class="upvote">
+                    <button type="button" id="upvote-button" class="btn waves-effect waves-light white">
+                        <i class="badge">{{votes}}</i>
+                        <i class="fa fa-arrow-circle-o-up"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-content truncate" style="max-height: 150px">
+                <span class="label label-primary">{{category}}</span>
+                <br>
+                {{{htmlDescription}}}
+            </div>
+            <div class="card-action">
+                <a href="{{ pathFor 'postPage' }}">
+                  <i class="fa fa-search"></i> View
                 </a>
-                {{# if ownPost }}
-                <a class="btn btn-xs btn-success" 
-                   href="{{ pathFor 'postEdit' }}">Edit</a>
-                {{/ if }}
-            </p>
+                {{#if ownPost }}
+                    <a href="{{ pathFor 'postEdit' }}">
+                      <i class="fa fa-edit"></i> Edit
+                    </a>
+                {{/if}}
+            </div>
         </div>
-        <a class="discuss btn btn-primary"
-           href="{{ pathFor 'postPage' }}">Discuss</a>
     </div>
 </template>

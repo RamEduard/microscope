@@ -1,7 +1,11 @@
 Template.postItem.events({
-    'click .upvote': function(e) {
-        e.preventDefault();
-        Meteor.call('upvote', this._id);
+    'click #upvote-button': function(e) {
+        if (!Meteor.userId()) {
+            return $.notify('You need sign in to upvote!', 'error');
+        }
+        else {
+            Meteor.call('upvote', this._id);
+        }
     }
 });
 

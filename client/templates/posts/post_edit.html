@@ -1,21 +1,19 @@
 <template name="postEdit">
-	<form class="main form">
-		<div class="form-group">
-			<label class="control-label" for="url">URL</label>
-			<div class="controls">
-				<input name="url" id="url" type="url" value="{{ url }}" placeholder="Your URL" class="form-control" required/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label" for="title">Title</label>
-			<div class="controls">
-				<input name="title" id="title" type="text" value="{{ title }}" placeholder="Name your post" class="form-control" required/>
-			</div>
-		</div>
-		<input type="submit" value="Submit" class="btn btn-primary"/>
-		<a class="btn btn-danger delete" 
-		   href="#">Delete Post</a>
-		<a class="btn btn-default" 
-		   href="{{ pathFor 'home' }}">Back</a>
-	</form>
+	<h4 class="page-header">Edit Your Post</h4>
+
+	{{#autoForm id="postEdit" collection="Posts" doc=post type="update" }}
+		{{> afQuickField name='imageUrl' placeholder="Introduce the post image URL"}}
+		{{> afQuickField name='title' placeholder="Introduce the post title"}}
+		{{> afQuickField name='category' }}
+	    {{> afQuickField name='description' rows=8  placeholder="Post content description..."}}
+
+	    <br/>
+	    <div>
+	    	<button type="submit" class="btn green">
+	    		<i class="fa fa-floppy-o"></i> Update
+    		</button>
+    		<a class="btn red delete" href="#">Delete</a>
+    		<a class="btn btn-default" href="{{ pathFor 'home' }}">Cancel</a>
+	    </div>
+	{{/autoForm}}
 </template>
