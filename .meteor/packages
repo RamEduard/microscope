@@ -5,12 +5,23 @@
 # but you can also edit it by hand.
 
 meteor-platform
-twbs:bootstrap
 underscore
 iron:router
-sacha:spin
-ian:accounts-ui-bootstrap-3
 accounts-password
 meteorhacks:sikka
 jrudio:notifyjs
 audit-argument-checks
+aldeed:simple-schema
+aldeed:collection2
+useraccounts:materialize
+multiply:iron-router-progress
+fourseven:scss
+zimme:active-route
+yasinuslu:blaze-meta
+jparker:crypto-md5
+aldeed:autoform
+mpowaga:autoform-summernote
+djedi:sanitize-html
+natestrauser:connection-banner
+accounts-facebook
+accounts-google
