@@ -21,12 +21,13 @@
       {{#each posts}}
         {{> postItem}}
       {{/each}}
-      
+    </div>
+    <div class="row">
       {{# if nextPath }}
-          <a class="load-more" href="{{ nextPath }}">Load more</a>
+        <a class="load-more" href="{{ nextPath }}">Load more</a>
       {{ else }}
           {{# unless ready }}
-              {{> loading }}
+            {{> loading }}
           {{/ unless }}
       {{/ if }}
     </div>
