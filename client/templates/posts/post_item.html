@@ -2,7 +2,7 @@
     <div class="col s12 m4 l3">
         <div class="card hoverable">
             <div class="card-image">
-                <img src="{{imageUrl}}">
+                <img class="responsive-img image-url" src="{{imageUrl}}">
                 <span class="card-title">{{title}}</span>
                 <div class="upvote">
                     <button type="button" id="upvote-button" class="btn waves-effect waves-light white">
@@ -11,7 +11,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card-content truncate" style="max-height: 150px">
+            <div class="card-content truncate">
                 <span class="label label-primary">{{category}}</span>
                 <br>
                 {{{htmlDescription}}}

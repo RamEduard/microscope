@@ -1,7 +1,12 @@
 Template.header.events({
   'click #sign-out': function (event) {
+    event.preventDefault();
     Meteor.logout();
     Router.go("/");
+  },
+  'click a:not(".dropdown-button")': function(event) {
+    event.preventDefault();
+    window.location.href = event.target.href;
   }
 });
 
