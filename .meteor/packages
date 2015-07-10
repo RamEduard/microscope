@@ -25,3 +25,5 @@ djedi:sanitize-html
 natestrauser:connection-banner
 accounts-facebook
 accounts-google
+tomi:upload-server
+tomi:upload-jquery
