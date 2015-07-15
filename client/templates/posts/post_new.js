@@ -19,4 +19,8 @@ Template.postNew.events({
             Router.go('home');
         });
     }
-})
+});
+
+Template.postNew.rendered = function () {
+    $('button', '.note-editor').tooltip();
+};

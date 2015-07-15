@@ -1243,7 +1243,12 @@ $(document).ready(function(){
         var origin = $(this);
 
       // Create Text span
-      var tooltip_text = $('<span></span>').text(origin.attr('data-tooltip'));
+      if (typeof origin.attr('data-tooltip') != "undefined") {
+      	var text = origin.attr('data-tooltip');
+      } else {
+      	var text = origin.attr('title');
+      }
+      var tooltip_text = $('<span></span>').text(text);
 
       // Create tooltip
       var newTooltip = $('<div></div>');
