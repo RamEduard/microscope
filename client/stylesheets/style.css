@@ -127,6 +127,10 @@ margin-top: 64px;
   pointer-events: auto;
 }
 
+.note-toolbar.btn-toolbar {
+  margin-left: 0;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;

@@ -6,6 +6,9 @@ Template.postItem.events({
         else {
             Meteor.call('upvote', this._id);
         }
+    },
+    'click .category': function() {
+        
     }
 });
 
