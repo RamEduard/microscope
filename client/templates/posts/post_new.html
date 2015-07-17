@@ -1,6 +1,6 @@
 <template name="postNew">
 
-	<h4 class="page-header">Create Your Post</h4>
+	<h4 class="page-header">{{_ "posts.create_title"}}</h4>
 
 	{{#autoForm id="postNew" collection="Posts" type="insert" }}
 		{{> afQuickField name='imageUrl' placeholder="Introduce the post image URL"}}
@@ -11,9 +11,9 @@
 	    <br/>
 	    <div>
 	    	<button type="submit" class="btn green">
-	    		<i class="fa fa-floppy-o"></i> Save
+	    		<i class="fa fa-floppy-o"></i> {{_ "posts.button_save"}}
     		</button>
-    		<a class="btn btn-default" href="{{ pathFor 'home' }}">Back</a>
+    		<a class="btn btn-default" href="{{ pathFor 'home' }}">{{_ "posts.button_back"}}</a>
 	    </div>
 	{{/autoForm}}
 </template>

@@ -1,3 +1,66 @@
 {
-	"title": "New Microscope"
+	"app_name": "New Microscope",
+	"header": {
+		"new": "New",
+		"best": "Best",
+		"new_post": "New Post",
+		"sign_up": "Sign Up",
+		"sign_in": "Sign In",
+		"sign_out": "Sign Out"
+	},
+	"not_found": {
+		"title": "Not Found",
+		"message": "Sorry, we couldn't find page at this address.",
+		"back_home": "Back Home"
+	},
+	"footer": {
+		"developed_by": "Developed by"
+	},
+	"home": {
+		"what_is": "A modern responsive microscope based on Material Design",
+		"create_button": "Create Your First Post",
+		"parallax_img_alt": "New Microscope Image",
+		"load_more": "Load more"
+	},
+	"posts": {
+		"edit_title": "Edit Your Post",
+		"image_url_placeholder": "Introduce the post image URL",
+		"title_placeholder": "Introduce the post title",
+		"description_placeholder": "Post content description...",
+		"button_update": "Update",
+		"button_delete": "Delete",
+		"button_cancel": "Cancel",
+		"view": "View",
+		"edit": "Edit",
+		"create_title": "Create Your Post",
+		"button_save": "Save",
+		"button_back": "Back"
+	},
+	"comments": {
+		"title": "Comments",
+		"login": "Please Log In to leave a comment.",
+		"on_post": "Comment on this post",
+		"introduce": "Introduce your comment...",
+		"button_send": "Send Comment"
+	},
+	"share_buttons": {
+		"buffer": "Share on Buffer",
+		"digg": "Share on Digg",
+		"email": "Share on Email",
+		"facebook": "Share on Facebook",
+		"google": "Share on Google",
+		"linkedin": "Share on LinkedIn",
+		"pinterest": "Share on Pinterest",
+		"print": "Print",
+		"reddit": "Share on Reddit",
+		"stumbleupon": "Share on StumbleUpon",
+		"tumblr": "Share on Tumblr",
+		"twitter": "Share on Twitter",
+		"vk": "Share on VK",
+		"yummly": "Share on Yummly"
+	},
+	"notifications": {
+		"no_notifications": "No Notifications",
+		"commented": " commented on your post"
+	}
 }

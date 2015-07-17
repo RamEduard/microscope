@@ -1,18 +1,18 @@
 <template name="header">
     <nav class="light-blue darken-4" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="{{ pathFor 'home' }}" class="brand-logo">New Microscope</a>
+            <a id="logo-container" href="{{ pathFor 'home' }}" class="brand-logo">{{_ "app_name"}}</a>
 
             <ul class="right hide-on-med-and-down">
                 <li class="{{activeRouteClass 'home' 'newPosts'}}">
-                    <a href="{{ pathFor 'newPosts' }}">New</a>
+                    <a href="{{ pathFor 'newPosts' }}">{{_ "header.new"}}</a>
                 </li>
                 <li class="{{activeRouteClass  'bestPosts'}}">
-                    <a href="{{ pathFor 'bestPosts' }}">Best</a>
+                    <a href="{{ pathFor 'bestPosts' }}">{{_ "header.best"}}</a>
                 </li>
                 {{#if currentUser}}
                     <li class="{{activeRouteClass 'postSubmit'}}">
-                        <a href="{{ pathFor 'postNew' }}">New Post</a>
+                        <a href="{{ pathFor 'postNew' }}">{{_ "header.new_post"}}</a>
                     </li>
                     {{> notifications id=1 }}
                     <!-- Dropdown Trigger -->
@@ -23,33 +23,33 @@
                         </a>
                     </li>
                 {{else}}
-                    <li class="{{isActiveRoute regex='signUp'}}"><a href="{{pathFor 'signUp'}}">Sign Up</a></li>
-                    <li class="{{isActiveRoute regex='signIn'}}"><a href="{{pathFor 'signIn'}}">Sign In</a></li>
+                    <li class="{{isActiveRoute regex='signUp'}}"><a href="{{pathFor 'signUp'}}">{{_ "header.sign_up"}}</a></li>
+                    <li class="{{isActiveRoute regex='signIn'}}"><a href="{{pathFor 'signIn'}}">{{_ "header.sign_in"}}</a></li>
                 {{/if}}
             </ul>
 
             <ul id="nav-mobile" class="side-nav hide-on-large-only">
                 <li class="{{activeRouteClass 'home' 'newPosts'}}">
-                    <a href="{{ pathFor 'newPosts' }}">New</a>
+                    <a href="{{ pathFor 'newPosts' }}">{{_ "header.new"}}</a>
                 </li>
                 <li class="{{activeRouteClass  'bestPosts'}}">
-                    <a href="{{ pathFor 'bestPosts' }}">Best</a>
+                    <a href="{{ pathFor 'bestPosts' }}">{{_ "header.best"}}</a>
                 </li>
                 {{#if currentUser}}
                     <li class="{{activeRouteClass 'postSubmit'}}">
-                        <a href="{{ pathFor 'postNew' }}">New Post</a>
+                        <a href="{{ pathFor 'postNew' }}">{{_ "header.new_post"}}</a>
                     </li>
                     {{> notifications id=2 }}
                     <!-- Dropdown Trigger -->
                     <li>
                         <a href="#!">
                             <i class="fa fa-2 fa-power-off"></i>
-                            <span class="truncate">Sign Out</span>
+                            <span class="truncate">{{_ "header.sign_out"}}</span>
                         </a>
                     </li>
                 {{else}}
-                    <li class="{{isActiveRoute regex='signUp'}}"><a href="{{pathFor 'signUp'}}">Sign Up</a></li>
-                    <li class="{{isActiveRoute regex='signIn'}}"><a href="{{pathFor 'signIn'}}">Sign In</a></li>
+                    <li class="{{isActiveRoute regex='signUp'}}"><a href="{{pathFor 'signUp'}}">{{_ "header.sign_up"}}</a></li>
+                    <li class="{{isActiveRoute regex='signIn'}}"><a href="{{pathFor 'signIn'}}">{{_ "header.sign_in"}}</a></li>
                 {{/if}}
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -61,7 +61,7 @@
         <li><a href="#!">two</a></li>
         <li class="divider"></li> -->
         <li>
-            <a href="#" id="sign-out">Sign Out</a>
+            <a href="#" id="sign-out">{{_ "header.sign_out"}}</a>
         </li>
     </ul>
 </template>

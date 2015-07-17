@@ -1,5 +1,5 @@
 <template name="postEdit">
-	<h4 class="page-header">Edit Your Post</h4>
+	<h4 class="page-header">{{_ "posts.edit_title"}}</h4>
 
 	{{#autoForm id="postEdit" collection="Posts" doc=post type="update" }}
 		{{> afQuickField name='imageUrl' placeholder="Introduce the post image URL"}}
@@ -10,10 +10,10 @@
 	    <br/>
 	    <div>
 	    	<button type="submit" class="btn green">
-	    		<i class="fa fa-floppy-o"></i> Update
+	    		<i class="fa fa-floppy-o"></i> {{_ "posts.button_update"}}
     		</button>
-    		<a class="btn red delete" href="#">Delete</a>
-    		<a class="btn btn-default" href="{{ pathFor 'home' }}">Cancel</a>
+    		<a class="btn red delete" href="#">{{_ "posts.button_delete"}}</a>
+    		<a class="btn btn-default" href="{{ pathFor 'home' }}">{{_ "posts.button_cancel"}}</a>
 	    </div>
 	{{/autoForm}}
 </template>

@@ -31,7 +31,7 @@
   		</div>
   	</div>
 
-  	<h5>Comments</h5>
+  	<h5>{{_ "comments.title"}}</h5>
 
 	<ul class="comments">
 		{{#each comments }}
@@ -41,6 +41,6 @@
 	{{# if currentUser }}
 		{{> commentNew }}
 	{{ else }}
-		<p>Please Log In to leave a comment.</p>
+		<p>{{_ "comments.login"}}</p>
 	{{/ if }}
 </template>

@@ -1,9 +1,9 @@
 <template name="notFound">
 	<div class="not-found jumbotron">
-		<h2>Not Found</h2>
-		<p>Sorry, we couldn't find page at this address.</p>
+		<h2>{{_ "not_found.title"}}</h2>
+		<p>{{_ "not_found.message"}}</p>
 		<p><a class="btn btn-primary" 
-		      href="{{ pathFor 'home' }}">Back Home</a>
+		      href="{{ pathFor 'home' }}">{{_ "not_found.back_home"}}</a>
         </p>
 	</div>
 </template>

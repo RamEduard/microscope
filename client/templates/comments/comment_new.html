@@ -2,14 +2,14 @@
     <form class="comment-form form" name="comment">
         <div class="form-group">
             <div class="controls">
-                <label for="body">Comment on this post</label>
+                <label for="body">{{_ "comments.on_post"}}</label>
                 <textarea class="form-control" 
                           name="body" 
                           id="body"
                           rows="3"
-                          placeholder="Introduce your comment..."></textarea>
+                          placeholder="{{_ "comments.introduce"}}"></textarea>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Add Comment</button>
+        <button type="submit" class="btn btn-primary">{{_ "comments.button_send"}}</button>
     </form>
 </template>

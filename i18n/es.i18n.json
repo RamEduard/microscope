@@ -1,3 +1,65 @@
 {
-	"title": "Nuevo Microscope"
+	"app_name": "Nuevo Microscope",
+	"header": {
+		"new": "Nuevo",
+		"best": "Mejor",
+		"new_post": "Nuevo Post",
+		"sign_up": "Registrarse",
+		"sign_in": "Iniciar Sesión",
+		"sign_out": "Cerrar Sesión"
+	},
+	"not_found": {
+		"title": "No Encontrado",
+		"message": "Lo sentimos, no pudimos encontrar tu petición.",
+		"back_home": "Volver al Inicio"
+	},
+	"footer": {
+		"developed_by": "Desarrollado por"
+	},
+	"home": {
+		"what_is": "Un nuevo y moderno microscope basado en Material Design",
+		"create_button": "Crea Tu Primer Post",
+		"load_more": "Cargar más"
+	},
+	"posts": {
+		"edit_title": "Editar Tu Post",
+		"image_url_placeholder": "Introduce la URL de la imagen del Post",
+		"title_placeholder": "Introduce el título del post",
+		"description_placeholder": "Contenido del Post",
+		"button_update": "Actualizar",
+		"button_delete": "Eliminar",
+		"button_cancel": "Cancelar",
+		"view": "Ver",
+		"edit": "Editar",
+		"create_title": "Crear Tu Post",
+		"button_save": "Guardar",
+		"button_back": "Atrás"
+	},
+	"comments": {
+		"title": "Comentarios",
+		"login": "Por favor Iniciar Sesión para dejar un comentario.",
+		"on_post": "Comenta en este post",
+		"introduce": "Introduce tu comentario...",
+		"button_send": "Enviar Comentario"
+	},
+	"share_buttons": {
+		"buffer": "Compartir en Buffer",
+		"digg": "Compartir en Digg",
+		"email": "Compartir por Correo",
+		"facebook": "Compartir en Facebook",
+		"google": "Compartir en Google",
+		"linkedin": "Compartir en LinkedIn",
+		"pinterest": "Compartir en Pinterest",
+		"print": "Imprimir",
+		"reddit": "Compartir en Reddit",
+		"stumbleupon": "Compartir en StumbleUpon",
+		"tumblr": "Compartir en Tumblr",
+		"twitter": "Compartir en Twitter",
+		"vk": "Compartir en VK",
+		"yummly": "Compartir en Yummly"
+	},
+	"notifications": {
+		"no_notifications": "Sin Notificaciones",
+		"commented": " ha comentado en tu post"
+	}
 }

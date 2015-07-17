@@ -18,11 +18,11 @@
             </div>
             <div class="card-action">
                 <a href="{{ pathFor 'postPage' }}">
-                  <i class="fa fa-search"></i> View
+                  <i class="fa fa-search"></i> {{_ "posts.view"}}
                 </a>
                 {{#if ownPost }}
                     <a href="{{ pathFor 'postEdit' }}">
-                      <i class="fa fa-edit"></i> Edit
+                      <i class="fa fa-edit"></i> {{_ "posts.edit"}}
                     </a>
                 {{/if}}
             </div>

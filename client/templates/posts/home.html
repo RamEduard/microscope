@@ -3,18 +3,18 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">New Microscope</h1>
+        <h1 class="header center teal-text text-lighten-2">{{_ "app_name"}}</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive microscope based on Material Design</h5>
+          <h5 class="header col s12 light">{{_ "home.what_is"}}</h5>
         </div>
         <div class="row center">
-          <a href="{{ pathFor 'postNew' }}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Create Your First Post</a>
+          <a href="{{ pathFor 'postNew' }}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">{{_ "home.create_button"}}</a>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="https://placehold.it/1920x1080?text=+" alt="New Microscope Image"></div>
+    <div class="parallax"><img src="https://placehold.it/1920x1080?text=+" alt="{{_ "home.parallax_img_alt"}}"></div>
   </div>
   <div class="container">
     <div class="row posts">
@@ -24,7 +24,7 @@
     </div>
     <div class="row">
       {{# if nextPath }}
-        <a class="load-more" href="{{ nextPath }}">Load more</a>
+        <a class="load-more" href="{{ nextPath }}">{{_ "home.load_more"}}</a>
       {{ else }}
           {{# unless ready }}
             {{> loading }}

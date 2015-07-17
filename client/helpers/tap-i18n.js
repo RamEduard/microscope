@@ -1,7 +1,13 @@
 getUserLanguage = function () {
   // Put here the logic for determining the user language
+  var lang = window.navigator.language || window.navigator.userLanguage;
 
-  return "es";
+  if (lang.search('en') > -1)
+    return 'en';
+  if (lang.search('es') > -1)
+    return 'es';
+
+  return 'en';
 };
 
 if (Meteor.isClient) {
