@@ -9,6 +9,8 @@
  4. Iron Router Progress
  5. Preloader of materialize
  6. Banner Parallax
+ 7. Share buttons
+ 8. Tap i18n translations.
 
 ### Screenshots
 
@@ -21,7 +23,6 @@
 ### Coming soon
 
  1. Uploader images
- 2. Share buttons
  3. Gallery
  4. Video banner (Youtube, Vimeo, other...)
  5. Categories and Tags filters
