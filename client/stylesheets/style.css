@@ -29,6 +29,15 @@ margin-top: 64px;
   height: 136px;
 }
 
+.posts .card-title {
+  background: -moz-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.3), rgba(0,0,0,.4));
+  background: -o-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.3), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.3), rgba(0,0,0,.4));
+  background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.3), rgba(0,0,0,.4));
+  bottom: 6px;
+  width: 100%;
+}
+
 .posts .card-content.truncate {
   height: 100px;
 }
